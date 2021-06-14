@@ -1,0 +1,18 @@
+# Alpine Workspace
+
+This is all the needed packages to configure Alpine as a WSL workstation.
+
+### Bash
+apk add bash bash-doc bash-completion
+
+### Utils
+apk add util-linux pciutils usbutils coreutils binutils findutils grep
+
+### Development tools
+apk add git openssh curl readline make g++ build-base binutils libc6-compat gdb
+
+### More tools for Development
+apk add ed rlwrap screen
+
+### Programming Languages
+apk add erlang
