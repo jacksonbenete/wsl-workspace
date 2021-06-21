@@ -15,4 +15,4 @@ apk add git openssh curl readline make g++ build-base binutils libc6-compat gdb
 apk add ed rlwrap screen
 
 ### Programming Languages
-apk add erlang
+apk add erlang erlang-dev
