@@ -22,9 +22,9 @@ apk add util-linux pciutils usbutils coreutils binutils findutils grep
 git, openssh, curl -- git for versioning, ssh for secure remote connections, curl for url retrival
 readline -- needed for movement commands on command line interface (see also rlwrap later)
 make, g++, build-base, cmake, linux-headers, libc6-compat -- various tools for development and compilation
-gdb, strace, ptrace -- useful tools for debugging programs
+gdb, strace -- useful tools for debugging programs
 ```
-apk add git openssh curl readline make g++ build-base cmake linux-headers libc6-compat gdb strace ptrace
+apk add git openssh curl readline make g++ build-base cmake linux-headers libc6-compat gdb strace
 ```
 
 ### Useful for CLI (and compilations)
