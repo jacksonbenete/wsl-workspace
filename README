@@ -2,17 +2,47 @@
 
 This is all the needed packages to configure Alpine as a WSL workstation.
 
-### Bash
+### Bash (using Bash instead of ash is optional)
+```
 apk add bash bash-doc bash-completion
+```
 
 ### Utils
+util-linux -- tools for handling partitions, disk drivers, system information, etc
+pciutils -- tools for list and set configurations of PCI devices
+usbutils -- display information about USB buses and devices connected to them
+coreutils -- gnu basic file, shell and text utilities (i.e. cat, pr, wc, ls, cp, ...)
+binutils -- gnu tools necessary for building programs (i.e. as, ld, ...)
+findutils -- gnu tools for finding files: find, locate, updatedb, xargs
+```
 apk add util-linux pciutils usbutils coreutils binutils findutils grep
+```
 
 ### Development tools
-apk add git openssh curl readline make g++ build-base binutils libc6-compat gdb
+git, openssh, curl -- git for versioning, ssh for secure remote connections, curl for url retrival
+readline -- needed for movement commands on command line interface (see also rlwrap later)
+make, g++, build-base, cmake, linux-headers, libc6-compat -- various tools for development and compilation
+gdb, strace, ptrace -- useful tools for debugging programs
+```
+apk add git openssh curl readline make g++ build-base cmake linux-headers libc6-compat gdb strace ptrace
+```
+
+### Useful for CLI (and compilations)
+ncurses -- console display library
+openssl -- transport layer security
+```
+apk add ncurses ncurses-dev openssl openssl-dev
+```
 
 ### More tools for Development
+ed -- gnu ed(1), better than busybox version
+rlwrap -- provide readline for programs
+screen -- gnu screen provides a window manager that multiplexes a physical terminal
+```
 apk add ed rlwrap screen
+```
 
 ### Programming Languages
+```
 apk add erlang erlang-dev
+```
